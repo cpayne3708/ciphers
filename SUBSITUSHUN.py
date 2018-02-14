@@ -1,17 +1,17 @@
 alphabet = "abcdefghijklmnopqrstuvwxyz\\`~!@#$%^&*()-_=+[{]}|;:'\",<.>/?ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
 key = " `~!@#$%^&*()-_=+[{]}|;:'\"<,.>/?\\poiuytrewqasdfghjklmnbvcxz0987654321POIUYTREWQASDFGHJKLMNBVCXZ"
 
-def encrypt(string):
+def encrypt(msg):
     new = ""
-    for c in string:
+    for c in msg:
         new += key[alphabet.find(c)]
 
 
     return new
 
-def decrypt(string):
+def decrypt(msg):
     new = ""
-    for c in string:
+    for c in msg:
         new += alphabet[key.find(c)]
 
     return new
